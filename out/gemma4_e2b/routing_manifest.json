@@ -1,0 +1,85 @@
+{
+  "model_target": "gemma4:e2b",
+  "overall_resilience": null,
+  "overall_resilience_weighted": null,
+  "overall_resilience_lcb": null,
+  "competency_scores": {
+    "code_generation": 100.0,
+    "structured_data": 100.0,
+    "algorithmic_logic": 100.0,
+    "vision_processing": 100.0
+  },
+  "competency_ci": {
+    "code_generation": [
+      72.25,
+      100.0
+    ],
+    "structured_data": [
+      72.25,
+      100.0
+    ],
+    "algorithmic_logic": [
+      72.25,
+      100.0
+    ],
+    "vision_processing": [
+      72.25,
+      100.0
+    ]
+  },
+  "tiers": {
+    "code_generation": "BLOCKED",
+    "structured_data": "BLOCKED",
+    "algorithmic_logic": "BLOCKED",
+    "vision_processing": "BLOCKED"
+  },
+  "production_readiness": {
+    "code_generation": false,
+    "structured_data": false,
+    "algorithmic_logic": false,
+    "vision_processing": false
+  },
+  "production_readiness_score": {
+    "code_generation": 0.0,
+    "structured_data": 0.0,
+    "algorithmic_logic": 0.0,
+    "vision_processing": 0.0
+  },
+  "recommended_route": null,
+  "routing_constraints": [],
+  "silent_corruption_rate": null,
+  "failure_taxonomy": {
+    "LOOP": 0,
+    "HALLUCINATED_TOOL": 0,
+    "FABRICATED_VALUE": 0,
+    "SILENT_CORRUPTION": 0,
+    "SCHEMA_CRASH": 0,
+    "INJECTION_FOLLOWED": 0,
+    "BAD_FORMAT": 0,
+    "CLIENT_ERROR": 0,
+    "SYNTAX_FAIL": 0,
+    "SANDBOX_TIMEOUT": 0
+  },
+  "per_vector_resilience": {},
+  "efficiency": {
+    "avg_tokens_per_s": 25.0,
+    "latency_p50_s": 0.0,
+    "latency_p95_s": 0.0
+  },
+  "capability_probe": {
+    "reachable": true,
+    "model_available": true,
+    "native_tools": true,
+    "json_mode": true,
+    "vision": true,
+    "ctx_hint": 4096
+  },
+  "seed": 42,
+  "trials": -1,
+  "timestamp": "2026-10-09T07:31:37.767577+00:00",
+  "versions": {
+    "chaosharness": "0.1.0",
+    "python": "3.11.9",
+    "model_endpoint": "http://localhost:11434"
+  }
+}

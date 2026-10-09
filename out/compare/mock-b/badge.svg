@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="28" viewBox="0 0 180 28">
+  <rect width="90" height="28" fill="#1e293b" rx="4"/>
+  <rect x="90" width="90" height="28" fill="#10b981" rx="4"/>
+  <rect width="180" height="28" fill="none" rx="4" stroke="#334155"/>
+  <text x="45" y="18" fill="#fff" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">ChaosHarness</text>
+  <text x="135" y="18" fill="#fff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">AUTONOMOUS (100%)</text>
+</svg>

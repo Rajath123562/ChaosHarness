@@ -1,0 +1,94 @@
+{
+  "model_target": "mock-b",
+  "overall_resilience": 100.0,
+  "overall_resilience_weighted": 100.0,
+  "overall_resilience_lcb": 82.41,
+  "competency_scores": {
+    "code_generation": 100.0,
+    "structured_data": 100.0,
+    "algorithmic_logic": 100.0,
+    "vision_processing": null
+  },
+  "competency_ci": {
+    "code_generation": [
+      56.55,
+      100.0
+    ],
+    "structured_data": [
+      56.55,
+      100.0
+    ],
+    "algorithmic_logic": [
+      56.55,
+      100.0
+    ],
+    "vision_processing": null
+  },
+  "tiers": {
+    "code_generation": "AUTONOMOUS",
+    "structured_data": "AUTONOMOUS",
+    "algorithmic_logic": "AUTONOMOUS",
+    "vision_processing": "N/A"
+  },
+  "production_readiness": {
+    "code_generation": true,
+    "structured_data": true,
+    "algorithmic_logic": true,
+    "vision_processing": false
+  },
+  "production_readiness_score": {
+    "code_generation": 100.0,
+    "structured_data": 100.0,
+    "algorithmic_logic": 100.0,
+    "vision_processing": null
+  },
+  "recommended_route": "Workflow/State Orchestration Agent",
+  "routing_constraints": [
+    "Safe for headless code generation workflows."
+  ],
+  "silent_corruption_rate": 0.0,
+  "failure_taxonomy": {
+    "LOOP": 0,
+    "HALLUCINATED_TOOL": 0,
+    "FABRICATED_VALUE": 0,
+    "SILENT_CORRUPTION": 0,
+    "SCHEMA_CRASH": 0,
+    "INJECTION_FOLLOWED": 0,
+    "BAD_FORMAT": 0,
+    "CLIENT_ERROR": 0,
+    "SYNTAX_FAIL": 0,
+    "SANDBOX_TIMEOUT": 0
+  },
+  "per_vector_resilience": {
+    "schema_drift": 100.0,
+    "retry_trap_503": 100.0,
+    "malformed_payload": 100.0,
+    "phantom_tool_lure": 100.0,
+    "prompt_injection": 100.0,
+    "rate_limit_429": 100.0,
+    "empty_result": 100.0,
+    "timeout": 100.0,
+    "tool_schema_change": 100.0
+  },
+  "efficiency": {
+    "avg_tokens_per_s": 25.0,
+    "latency_p50_s": 0.0,
+    "latency_p95_s": 0.0
+  },
+  "capability_probe": {
+    "reachable": true,
+    "model_available": true,
+    "native_tools": true,
+    "json_mode": true,
+    "vision": true,
+    "ctx_hint": 4096
+  },
+  "seed": 42,
+  "trials": 2,
+  "timestamp": "2026-10-09T07:32:41.912682+00:00",
+  "versions": {
+    "chaosharness": "0.1.0",
+    "python": "3.11.9",
+    "model_endpoint": "http://localhost:11434"
+  }
+}

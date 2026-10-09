@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChaosHarness Report - mock-a</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 40px auto; max-width: 1000px; color: #1e293b; background: #f8fafc; line-height: 1.5; }
+        .card { background: #ffffff; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        h1, h2, h3 { color: #0f172a; margin-top: 0; }
+        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #e2e8f0; }
+        th { background: #f1f5f9; font-size: 13px; text-transform: uppercase; color: #475569; }
+        .badge-green { background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+        .badge-blue { background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+        .badge-red { background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+        .badge-gray { background: #f1f5f9; color: #475569; padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+        .flex { display: flex; gap: 24px; }
+        .flex-1 { flex: 1; }
+        .center { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div>
+                <h1>ChaosHarness Evaluation</h1>
+                <p style="margin: 4px 0 0; color: #64748b;">Target: <strong>mock-a</strong> | Timestamp: 2026-10-09T07:32:41.085370+00:00</p>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-size: 28px; font-weight: 700; color: #2563eb;">100.0%</div>
+                <div style="font-size: 12px; color: #64748b;">Overall Resilience (LCB: 82.41%)</div>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+            <div style="background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <div style="font-size: 12px; color: #64748b;">Recommended Route</div>
+                <div style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 4px;">Workflow/State Orchestration Agent</div>
+            </div>
+            <div style="background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <div style="font-size: 12px; color: #64748b;">Silent Corruption Rate</div>
+                <div style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 4px;">0.0</div>
+            </div>
+            <div style="background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <div style="font-size: 12px; color: #64748b;">Weighted Resilience</div>
+                <div style="font-size: 16px; font-weight: 600; color: #0f172a; margin-top: 4px;">100.0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Domain Competency Profiles</h2>
+        <div class="flex" style="align-items: center;">
+            <div class="flex-1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            <th>Score</th>
+                            <th>95% CI</th>
+                            <th>Tier</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>code_generation</strong></td><td>100.0%</td><td>[56.55%, 100.0%]</td><td><span class='badge-green'>AUTONOMOUS</span></td><td><span class='badge-green'>READY</span></td></tr>
+<tr><td><strong>structured_data</strong></td><td>100.0%</td><td>[56.55%, 100.0%]</td><td><span class='badge-green'>AUTONOMOUS</span></td><td><span class='badge-green'>READY</span></td></tr>
+<tr><td><strong>algorithmic_logic</strong></td><td>100.0%</td><td>[56.55%, 100.0%]</td><td><span class='badge-green'>AUTONOMOUS</span></td><td><span class='badge-green'>READY</span></td></tr>
+<tr><td><strong>vision_processing</strong></td><td>N/A</td><td>N/A</td><td><span class='badge-gray'>N/A</span></td><td><span class='badge-red'>BLOCKED</span></td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="center" style="width: 380px;">
+                <svg width='360' height='360' viewBox='0 0 360 360' xmlns='http://www.w3.org/2000/svg'>
+<polygon points='180.0,147.5 208.1,196.2 151.9,196.2' fill='none' stroke='#e2e8f0' stroke-width='1.5' stroke-dasharray='4,4'/>
+<polygon points='180.0,115.0 236.3,212.5 123.7,212.5' fill='none' stroke='#e2e8f0' stroke-width='1.5' stroke-dasharray='4,4'/>
+<polygon points='180.0,82.5 264.4,228.8 95.6,228.8' fill='none' stroke='#e2e8f0' stroke-width='1.5' stroke-dasharray='4,4'/>
+<polygon points='180.0,50.0 292.6,245.0 67.4,245.0' fill='none' stroke='#e2e8f0' stroke-width='1.5' stroke-dasharray='4,4'/>
+<line x1='180.0' y1='180.0' x2='180.0' y2='50.0' stroke='#cbd5e1' stroke-width='1.5'/>
+<text x='180.0' y='25.0' text-anchor='middle' alignment-baseline='middle' font-family='sans-serif' font-size='11' font-weight='600' fill='#475569'>Code Generation (100%)</text>
+<line x1='180.0' y1='180.0' x2='292.6' y2='245.0' stroke='#cbd5e1' stroke-width='1.5'/>
+<text x='314.2' y='257.5' text-anchor='start' alignment-baseline='middle' font-family='sans-serif' font-size='11' font-weight='600' fill='#475569'>Structured Data (100%)</text>
+<line x1='180.0' y1='180.0' x2='67.4' y2='245.0' stroke='#cbd5e1' stroke-width='1.5'/>
+<text x='45.8' y='257.5' text-anchor='end' alignment-baseline='middle' font-family='sans-serif' font-size='11' font-weight='600' fill='#475569'>Algorithmic Logic (100%)</text>
+<polygon points='180.0,50.0 292.6,245.0 67.4,245.0' fill='rgba(37, 99, 235, 0.25)' stroke='#2563eb' stroke-width='2.5'/>
+</svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="card flex-1">
+            <h2>Runtime Chaos Resilience</h2>
+            <table>
+                <thead>
+                    <tr><th>Vector</th><th>Pass Rate</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>schema_drift</td><td>100.0%</td></tr>
+<tr><td>retry_trap_503</td><td>100.0%</td></tr>
+<tr><td>malformed_payload</td><td>100.0%</td></tr>
+<tr><td>phantom_tool_lure</td><td>100.0%</td></tr>
+<tr><td>prompt_injection</td><td>100.0%</td></tr>
+<tr><td>rate_limit_429</td><td>100.0%</td></tr>
+<tr><td>empty_result</td><td>100.0%</td></tr>
+<tr><td>timeout</td><td>100.0%</td></tr>
+<tr><td>tool_schema_change</td><td>100.0%</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card flex-1">
+            <h2>Primary Failure Taxonomy</h2>
+            <table>
+                <thead>
+                    <tr><th>Failure Type</th><th>Count</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>LOOP</code></td><td>0</td></tr>
+<tr><td><code>HALLUCINATED_TOOL</code></td><td>0</td></tr>
+<tr><td><code>FABRICATED_VALUE</code></td><td>0</td></tr>
+<tr><td><code>SILENT_CORRUPTION</code></td><td>0</td></tr>
+<tr><td><code>SCHEMA_CRASH</code></td><td>0</td></tr>
+<tr><td><code>INJECTION_FOLLOWED</code></td><td>0</td></tr>
+<tr><td><code>BAD_FORMAT</code></td><td>0</td></tr>
+<tr><td><code>CLIENT_ERROR</code></td><td>0</td></tr>
+<tr><td><code>SYNTAX_FAIL</code></td><td>0</td></tr>
+<tr><td><code>SANDBOX_TIMEOUT</code></td><td>0</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Active Routing Constraints</h2>
+        <ul>
+            <li>Safe for headless code generation workflows.</li>
+
+        </ul>
+    </div>
+</body>
+</html>
