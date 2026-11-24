@@ -1,5 +1,18 @@
 # ChaosHarness
 
+### Automated LLM Evaluation, Runtime Fault-Injection & Competency Profiling
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Evaluation](https://img.shields.io/badge/Evaluation-Deterministic_Oracles-blueviolet?style=for-the-badge)](https://github.com/Rajath123562/ChaosHarness)
+[![Fault Injection](https://img.shields.io/badge/Fault_Injection-9_Anomaly_Vectors-red?style=for-the-badge)](https://github.com/Rajath123562/ChaosHarness)
+[![Ollama](https://img.shields.io/badge/Ollama-Local_Inference-black?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+</div>
+
+
 **ChaosHarness** is an automated LLM evaluation, runtime-chaos testing, domain-competency profiling, and model-routing-contract generation system. It evaluates whether an open-weight or locally served LLM can reliably operate within tool-using agentic workflows under real-world runtime anomalies and failure modes.
 
 ---
