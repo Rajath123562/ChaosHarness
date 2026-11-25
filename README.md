@@ -8,7 +8,7 @@
 [![Evaluation](https://img.shields.io/badge/Evaluation-Deterministic_Oracles-blueviolet?style=for-the-badge)](https://github.com/Rajath123562/ChaosHarness)
 [![Fault Injection](https://img.shields.io/badge/Fault_Injection-9_Anomaly_Vectors-red?style=for-the-badge)](https://github.com/Rajath123562/ChaosHarness)
 [![Ollama](https://img.shields.io/badge/Ollama-Local_Inference-black?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)](LICENSE)
 
 </div>
 

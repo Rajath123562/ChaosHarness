@@ -72,6 +72,10 @@ def run_vision_item(seed: int, item_id: str, cat: str, client, skip_vision: bool
         
     prompt, img_bytes, gt = generate_vision_task(seed, cat)
     
+    cache = getattr(client, "cache", None)
+    if cache is not None:
+        img_bytes = cache.vision_input(seed, cat, img_bytes)
+
     start = time.perf_counter()
     resp = client.chat([{"role": "user", "content": prompt}], images=[img_bytes], hint={"mock_response": gt})
     lat = time.perf_counter() - start

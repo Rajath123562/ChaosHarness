@@ -68,6 +68,16 @@ class RequestCache:
             if key not in self._entries:
                 self._save_entry(key, response_data)
 
+    def vision_input(self, seed: int, category: str, generated: bytes) -> bytes:
+        # Match the exact recorded request even if Pillow or zlib encodes it differently.
+        path = self.cache_dir / "vision" / f"{seed}-{category}.png"
+        if self.mode in ("record", "replay") and path.is_file():
+            return path.read_bytes()
+        if self.mode == "record":
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(generated)
+        return generated
+
     def get_probe_metadata(self) -> dict | None:
         meta_file = self.cache_dir / "probe_metadata.json"
         if meta_file.exists():
